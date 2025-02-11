@@ -23,7 +23,7 @@ Replace `your-username` with your actual GitHub username.
 Inside your cloned repository, create `index.html`:
 
 ```sh
-echo "<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>My Dockerized HTML Page</title>
@@ -31,15 +31,15 @@ echo "<!DOCTYPE html>
 <body>
     <h1>Hello, World! Hosted from GitHub and running in Docker Playground.</h1>
 </body>
-</html>" > index.html
+</html>
 ```
 
 Create a `Dockerfile`:
 
 ```sh
-echo "FROM nginx:alpine
+FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
-EXPOSE 80" > Dockerfile
+EXPOSE 80
 ```
 
 ### **4. Push to GitHub**
